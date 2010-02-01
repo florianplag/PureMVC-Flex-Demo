@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" >
+	<mx:ViewStack width="300" height="200" id="pageDisplay">
+		<mx:HBox>
+			<mx:Label text="#1" fontSize="150"/>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="#2" fontSize="150"/>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="#3" fontSize="150"/>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Label text="#4" fontSize="150"/>
+		</mx:HBox>					
+	</mx:ViewStack>
+</mx:HBox>

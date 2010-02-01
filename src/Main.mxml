@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application 
+	xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()"
+	xmlns:viewcomp="org.florianplag.view.components.*" 
+	backgroundColor="0xffffff"
+	>
+
+	<mx:Script>
+	<![CDATA[
+		import org.florianplag.*;
+	
+		private var facade:ApplicationFacade;
+		
+		public function init():void {
+			facade = ApplicationFacade.getInstance();
+			facade.sendNotification(ApplicationFacade.STARTUP, this);
+		}
+	]]>
+	</mx:Script>
+
+
+	<viewcomp:PageView  width="300" height="200" id="customView"></viewcomp:PageView>	
+	
+	<mx:HBox>
+		<mx:Button label="Previous page" id="previousPageButton" />	
+		<mx:Button label="Next page" id="nextPageButton" />
+	</mx:HBox>
+	
+	<mx:Spacer height="50" />
+	
+	<mx:Button label="Jump to page 3" id="jumpToPageButton" />	
+
+</mx:Application>
